@@ -1,0 +1,14 @@
+use versionband;
+
+fn main() {
+    let version = [1, 2, 0];
+    let lower = [1, 2, 0];
+    let upper = [2, 0, 0];
+    let result = versionband_contains(version, lower, upper);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
